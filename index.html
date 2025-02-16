@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>병찬고사.TEST</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/qna.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/result.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Hi+Melody&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <section id="main" class="mx-auto my-5 py-4 px-3">
+        <h1>
+          병찬고사에 오신걸 환영합니다 <br />(아직 미출시된 미완성 테스트
+          사이트입니다.)
+        </h1>
+        <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+          <img
+            src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCIVNp%2FbtsIx38HPGP%2FggqvfVQdm5pssv6zbUi8o1%2Fimg.png"
+            alt="mainImage"
+            class="img-fluid"
+          />
+        </div>
+        <p>
+          이병찬에 관한 문제가 출시됩니다.<br />
+          문제를 다 풀고 학점과 점수를 확인해보세요! <br />
+          총 문제는 n개 입니다. <br />
+          시작하기 버튼을 눌러 시작하세요.
+        </p>
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          onclick="js:begin()"
+        >
+          시작하기
+        </button>
+      </section>
+
+      <section id="qna">
+        <div class="status mx-auto mt-3">
+          <div class="statusBar"></div>
+        </div>
+
+        <div class="qBox my-4 py-4 mx-auto"></div>
+
+        <div class="answerBox"></div>
+
+        <img id="q-img" class="mt-5" src="" alt="quiz Image" />
+      </section>
+
+      <section id="result">
+        <h1>당신의 결과는?</h1>
+        <p id="totalScore">총 점수</p>
+        <div class="resultname"></div>
+        <div id="resultImg" class="col-lg-6 col-md-8 col-sm-10 mx-auto"></div>
+        <div class="resultDesc"></div>
+        <button type="button">공유하기</button>
+      </section>
+    </div>
+
+    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+  </body>
+</html>
